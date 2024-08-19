@@ -1,0 +1,59 @@
+.container {
+	width: 600px;
+	height: 150px;
+	border: 5px solid royalblue;
+	margin: 30px auto;
+	padding: 5px;
+	box-sizing: border-box;
+	display: flex;
+
+	/*arah dan urutan item di container -> flex-direction: row | row-reverse | column | column-reverse */
+	flex-direction: row;
+
+	/* memindahkan item ke bawah
+	flex-wrap: nowrap | wrap | wrap-reverse;*/
+	flex-wrap: wrap;
+
+	/*mengatur rata dari elemen di dalam konten*/
+	/*justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;*/
+	justify-content: space-evenly;
+
+	/*mengatur perilaku penjajaran items terhadap cross axis*/
+	/*align-items: flex-start | flex-end | center | stretch | baseline;*/
+	/*align-items: baseline;*/
+
+	/*mengatur jarak antar items terhadap cross axis (hanya berfungsi ketika items lebih dari satu baris)
+	align-content: flex-start | flex-end | center | stretch | space-between |space-around;*/
+
+}
+
+/*.container::after {
+	content: '';
+	display: block;
+	clear: both;
+}*/
+
+.container div {
+	/*width: 140px;
+	height: 100px;*/
+	margin: 2px;
+
+	/*mengatur ukuran item*/
+	flex-grow: 1;
+	background-color: skyblue;
+}
+
+.satu {
+	/*mengatur urutan item -> defaultnya order = 0*/
+	order: 2;
+}
+
+.container div.dua {
+	order: 1;
+	flex: 2;
+
+	/*mengatur perilaku penjajaran sebuah item yang spesifik terharap cross axis*/
+	/*align-self: auto | flex-start | flex-end | center | baseline | stretch;*/
+
+	
+}

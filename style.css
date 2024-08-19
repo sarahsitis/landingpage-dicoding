@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  position: relative;
+  width: 80%;
+  background-color: lightcoral;
+  margin: 0 100px;
+}
+
+ul {
+  display: inline;
+}
+
+main {
+  display: flex;
+  margin: 20px 100px 0;
+  padding: 20px;
+  width: 80%;
+  height: fit-content;
+  background-color: lemonchiffon;
+}
+
+footer {
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+  background-color: lightsalmon;
+  text-align: center;
+}
+
+.gambar {
+  padding: 10px;
+  width: 20%;
+  background-color: lightslategray;
+}
+
+.form {
+  position: relative;
+  padding: 10px;
+  width: 70%;
+  background-color: white;
+}
+
+.paragraf {
+  position: relative;
+  padding: 10px;
+  width: 100%;
+  background-color: yellowgreen;
+}
